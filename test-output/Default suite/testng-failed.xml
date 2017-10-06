@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="com.amazon.test.ValidLoginTest">
+        <methods>
+          <include name="testValidLogin"/>
+          <include name="precondition"/>
+        </methods>
+      </class> <!-- com.amazon.test.ValidLoginTest -->
+      <class name="com.amazon.test.InvalidLoginTest">
+        <methods>
+          <include name="testinValidLogin"/>
+          <include name="precondition"/>
+        </methods>
+      </class> <!-- com.amazon.test.InvalidLoginTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

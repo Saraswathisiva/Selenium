@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="firefoxTest(failed)">
+    <parameter name="node" value="http://127.0.0.1:4444/wd/hub"/>
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.amazon.test.HelpTest">
+        <methods>
+          <include name="testhelp"/>
+          <include name="postconditions"/>
+          <include name="openApp"/>
+          <include name="initApp"/>
+        </methods>
+      </class> <!-- com.amazon.test.HelpTest -->
+      <class name="com.amazon.test.InvalidLoginTest">
+        <methods>
+          <include name="postconditions"/>
+          <include name="testinValidLogin"/>
+          <include name="openApp"/>
+          <include name="initApp"/>
+        </methods>
+      </class> <!-- com.amazon.test.InvalidLoginTest -->
+      <class name="com.amazon.test.ValidLoginTest">
+        <methods>
+          <include name="testValidLogin"/>
+          <include name="postconditions"/>
+          <include name="openApp"/>
+          <include name="initApp"/>
+        </methods>
+      </class> <!-- com.amazon.test.ValidLoginTest -->
+    </classes>
+  </test> <!-- firefoxTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
